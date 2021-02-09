@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "node buildData.js",
+    "build-prod": "node buildData.js && cp _headers content/_headers",
     "start": "serve --port 5000 --cors content"
   },
   "devDependencies": {
